@@ -17,7 +17,7 @@ html file
     height: 100%;
     top:0;
     left:0;
-    background: #333333;
+    background: #fff;
     display: block;  
     
 }
@@ -33,27 +33,40 @@ html file
     opacity: 1;
     visibility: visible;    
 }
-.page-loader.hidden{
+.page-loader.p-hidden{
     visibility: hidden;
-/*    display: none;*/
     opacity: 0;
-    
 }
     .page-loader div{
         position: absolute;
         top:50%;
         width: 100%;
         text-align: center;
-        color: #fff;
-        margin-top: -1rem;
-        font-size: 4rem;
+        color: #1d1d1d;
+        margin-top: -50px;
+    	display: block; 
     }
+		.page-loader div .icon{
+			display: inline-block;
+			margin-left: -20px;
+            left: 50%;
+			width: 40px;
+			height: 40px;
+			content: "";
+			background: #1d1d1d;
+			border-radius: 100px;
+			border: 8px solid #fff;
+			border-top-color: rgba(255, 255, 255, 0.58);
+			border-bottom-color: rgba(255, 255, 255, 0.58);
+		}
         .page-loader div p{
-            margin-top: 1.0rem;
-            font-size: 1.0rem;
-            color: #fff;
-            letter-spacing: -0.05rem;
-            padding-left: 0.15rem;
+            margin-top: 100px;
+            font-size: 14px;
+            color: #555;
+            letter-spacing: 1em;
+            padding-left: 1em;
             text-transform: uppercase;
-            font-family: 'OpenSans'; 
+/*			font-family: 'Montserrat';*/
+			font-family: 'Roboto', 'Helvetica', sans-serif;
+			font-weight: bold;
         }
