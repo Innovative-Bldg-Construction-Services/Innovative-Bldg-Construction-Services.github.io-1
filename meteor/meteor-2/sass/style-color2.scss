@@ -1,0 +1,59 @@
+/* Alternative colors */
+$color1 : #E7012A;
+//$color1 : #fff;
+/* Alternative colors */
+$color2 : #ff9800;
+
+
+/* menu */
+.main-menu,
+.top-menu-links{
+	background: rgba(0,0,0,0.9);
+	@media (min-width: 601px){
+		background: none;
+	}
+}
+.top-menu-links .links li.cta a:hover{
+	color: $color1;
+}
+.main-menu ul li.active .icon,
+.main-menu ul li a:hover{
+	color: $color1;
+}
+ 
+ /* main page */
+.section .content .title-desc h2{
+	color:  $color1;
+}
+.section .content .c-columns{
+	.item-desc a {
+		color: $color1;
+	}
+	.circ-btn:hover:before{
+		border-color: $color1;
+		border-top-color: transparent;
+	}
+}
+
+/* footer */
+ 
+/* Buttons */
+.circ-btn{
+	color: #fff;
+}
+@media (min-width: 601px){
+	.circ-btn{
+		color: #fff;
+	}
+}
+.btn-normal,
+.section .social-grid li .s-icon:hover{
+	color: $color1;
+}
+.btn-normal:focus,
+.btn-normal:hover{
+	border-color: $color1;
+}
+
+/* Fonts */
+

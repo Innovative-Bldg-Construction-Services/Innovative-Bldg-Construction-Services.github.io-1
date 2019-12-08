@@ -1,0 +1,17 @@
+@import "./mixins";
+@import "./variables";
+
+ 
+ /* Font customization */
+.section .content .title-desc h2{
+	font-family: $geo;
+	letter-spacing: 0;
+}
+.section .content .item-list li h3,
+.section-slider .content .slider-wrapper .items-slides .swiper-slide .slideitem-wrapper .item-desc h3{
+	font-family: $geo;
+	font-weight: bold;
+	letter-spacing: 0;
+}
+
+

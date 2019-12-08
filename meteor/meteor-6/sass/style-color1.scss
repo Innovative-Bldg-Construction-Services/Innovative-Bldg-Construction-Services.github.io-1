@@ -1,0 +1,28 @@
+@import "./mixins";
+
+/* Alternative colors */
+$color1 : #e91e63;
+// $color1 : rgba(0,0,0,0.5);
+$color2 : #0081D5;
+$black : #2a2a2a;
+
+.section.item-home{
+	background: url("../img/items/img-sample1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	// IE 11 hack
+	@media screen and (min-width:0\0) {
+		background-attachment: initial;
+	}
+	.section-bg{
+		&:before{
+			content: '';
+			position: absolute;
+			@include fullsize;
+			background: transparentize( $color1, 0.5);
+		}
+	}
+}
