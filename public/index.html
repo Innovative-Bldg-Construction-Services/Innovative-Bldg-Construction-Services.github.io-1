@@ -59,7 +59,7 @@ http://miradontsoa.com
   <link rel="stylesheet" href="./css/main.css">
 
   <!-- add alt layout here -->
-  <!--<link rel="stylesheet" href="./css/style-default.css">-->
+  <link rel="stylesheet" href="./css/style-color1.css">
 
   <script src="./js/vendor/modernizr-2.7.1.min.js"></script>
 </head>
@@ -96,7 +96,7 @@ http://miradontsoa.com
     <!-- Begin of logo/brand -->
     <a class="navbar-brand" href="./#">
       <span class="logo">
-        <img class="light-logo" src="img/logo.png" alt="Logo">
+        <img class="light-logo" src="img/logo.jpeg" alt="Logo">
       </span>
       <span class="text">
         <span class="line">Flux</span>
@@ -125,15 +125,15 @@ http://miradontsoa.com
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="./index.html#home">Home
+            <a class="nav-link" href="./index-style1.html#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./gallery.html">Works</a>
+            <a class="nav-link" href="./gallery-style1.html">Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./item.html">Item</a>
+            <a class="nav-link" href="./item-style1.html">Item</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./demo.html">Demo</a>
@@ -173,12 +173,12 @@ http://miradontsoa.com
   <!-- END OF site header Menu-->
 
   <!-- BEGIN OF page cover -->
-  <div class="hh-cover page-cover">
-    <!-- Cover Background -->
-    <div class="cover-bg bg-img " data-image-src="img/bg-default.jpg"></div>
+  <div class="page-cover" id="parallax-cover">
 
-    <!-- Particles as background - uncomment below to use particles/snow -->
-    <div id="particles-js" class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
+    <!-- Transluscent mask as filter -->
+    <div class="cover-bg-mask bg-color" data-bgcolor="#ffffff"></div>
+
+
   </div>
   <!--END OF page cover -->
 
@@ -231,6 +231,7 @@ http://miradontsoa.com
 
     <!-- Begin of description with team slider section -->
     <div class="section section-description fp-auto-height-responsive " data-section="about">
+      <div class="section-cover-full fit bg-color" data-bgcolor="#f1f2f3"></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom">
@@ -389,242 +390,55 @@ http://miradontsoa.com
       <!-- End of section wrapper -->
     </div>
     <!-- End of description with team slider section -->
-
-    <!-- Begin of slider section -->
-    <div class="section section-twoside fullscreen-slider " data-section="projects-featured">
-      <div class="slide">
-        <div class="slide-wrapper">
-          <div class="item-wrapper">
-            <div class="illustr">
-              <div class="img bg-img" data-image-src="img/items/img-sample1.jpg"></div>
-            </div>
-            <div class="legend">
-              <a href="item.html#project_url">
-                <h3>Paper Design</h3>
-                <h4>Art / Print</h4>
-                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
-              </a>
-              <a class="btn btn-underline btn-primary" href="item.html#project_url">
-                <span class="text">View Project</span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="#">
-                  <i class="icon ion-android-home"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon ion-android-cart"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="slide-wrapper">
-          <div class="item-wrapper">
-            <div class="illustr">
-              <div class="img bg-img" data-image-src="img/items/img-sample2.jpg"></div>
-            </div>
-            <div class="legend">
-              <a href="item.html#project_url">
-                <h3>Fire Cloud</h3>
-                <h4>Photography / App</h4>
-                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
-              </a>
-              <a class="btn btn-underline btn-primary" href="item.html#project_url">
-                <span class="text">View Project</span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="#">
-                  <i class="icon ion-android-home"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon ion-android-cart"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="slide-wrapper">
-          <div class="item-wrapper">
-            <div class="illustr">
-              <div class="img bg-img" data-image-src="img/items/img-sample3.jpg"></div>
-            </div>
-            <div class="legend">
-              <a href="item.html#project_url">
-                <h3>Color Wall</h3>
-                <h4>Photography</h4>
-                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
-              </a>
-              <a class="btn btn-underline btn-primary" href="item.html#project_url">
-                <span class="text">View Project</span>
-              </a>
-              <div class="icons">
-                <a class="icon-btn" href="#">
-                  <i class="icon ion-android-home"></i>
-                </a>
-                <a class="icon-btn" href="#">
-                  <i class="icon fa fa-instagram"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- Arrows scroll down/up -->
-      <footer class="section-footer scrolldown">
-        <a class="down">
-          <span class="icon down"></span>
-        </a>
-        <span class="separator"></span>
-        <a class="up">
-          <span class="icon up"></span>
-        </a>
-      </footer>
-
-    </div>
-    <!-- End of slider section -->
-
-    <!-- Begin of list projects section -->
-    <div class="section section-list-feature fp-auto-height-responsive " data-section="projects">
-
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive section-text-bright"
+    data-section="about-feature-1">
+      <div class="section-cover-full fit bg-color" data-bgcolor="rgb(80,80,80)"></div>
       <!-- Begin of section wrapper -->
-      <div class="section-wrapper fullwidth with-margin margin-topbottom">
+      <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
+
         <!-- content -->
         <div class="section-content anim">
-          <div class="row">
-            <div class="col-12 col-lg-6 text-left">
-              <!-- title and description -->
-              <div class="title-desc">
-                <h2 class="display-4 display-title anim-1">Projects</h2>
-                <p class="anim-2">List of our projects. Lorem ipsum magicum dolor sit amet, consectetur
-                  adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum
-                  a sit amet nulla.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="row  justify-content-between">
+            <div class="col-12 col-lg-5 text-left center-v">
+              <div class="wrapper">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <h2 class="display-4 display-title anim-1">The best
+                    <span class="text-lighter">Startup</span>
+                  </h2>
+                  <p class="anim-2">This describes what we do and what is our mission. At right you
+                    can see the awesome people behind. Lorem ipsum magicum dolor
+                    sit amet, consectetur adipiscing elit. Maecenas a sem ultrices
+                    neque vehicula fermentum a sit amet nulla.
+                  </p>
+                </div>
 
-          <!-- project list -->
-          <div class="project-list grid-1 grid-md-2 grid-lg-3 anim-list">
-            <!-- an item -->
-            <div class="item media media-project">
-              <div class="media-img">
-                <img class="" src="img/items/img-sample9-square.jpg" alt="An image">
-              </div>
-              <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>Art / Design</h4>
-                  <h3>Alpha Project</h3>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-underline btn-primary" href="item.html">
-                  <span class="text">Details ...</span>
-                </a>
+                <!-- Action button -->
+                <div class="btns-action anim-3">
+                  <a class="btn btn-underline btn-primary" href="#services">
+                    <span class="text">Services</span>
+                  </a>
+                </div>
               </div>
             </div>
-            <!-- an item -->
-            <div class="item media media-project">
-              <div class="media-img">
-                <img class="" src="img/items/img-sample10-square.jpg" alt="An image">
-              </div>
-              <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>Archi / Photo</h4>
-                  <h3>Beta Project</h3>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-underline btn-primary" href="item.html">
-                  <span class="text">Details ...</span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media media-project">
-              <div class="media-img">
-                <img class="" src="img/items/img-sample11-square.jpg" alt="An image">
-              </div>
-              <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>Website Design</h4>
-                  <h3>Gamma Project</h3>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-underline btn-primary" href="item.html">
-                  <span class="text">Details ...</span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media media-project">
-              <div class="media-img">
-                <img class="" src="img/items/img-sample12-square.jpg" alt="An image">
-              </div>
-              <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>Consulting</h4>
-                  <h3>Alpha Structure</h3>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-underline btn-primary" href="item.html">
-                  <span class="text">Details ...</span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media media-project">
-              <div class="media-img">
-                <img class="" src="img/items/img-sample13-square.jpg" alt="An image">
-              </div>
-              <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>Android / iPhone</h4>
-                  <h3>Beta Coding</h3>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-underline btn-primary" href="item.html">
-                  <span class="text">Details ...</span>
-                </a>
-              </div>
-            </div>
-            <!-- an item -->
-            <div class="item media media-project">
-              <div class="media-img">
-                <img class="" src="img/items/img-sample14-square.jpg" alt="An image">
-              </div>
-              <div class="media-body">
-                <a href="item.html#project_url">
-                  <h4>Finance</h4>
-                  <h3>Gamma Analytics</h3>
-                </a>
-              </div>
-              <div class="media-footer">
-                <a class="btn btn-underline btn-primary" href="item.html">
-                  <span class="text">Details ...</span>
-                </a>
+
+            <div class="col-12 col-lg-6">
+              <!-- content -->
+              <div class="section-content center-vh anim">
+                <!-- illustartion -->
+                <div class="images text-center">
+                  <div class="img-frame img-black frame-small">
+                    <div class="img-1 shadow">
+                      <img class="img" src="img/items/laptop.png" alt="Image">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
           </div>
-
         </div>
-
-
-
 
         <!-- Arrows scroll down/up -->
         <footer class="section-footer scrolldown">
@@ -639,7 +453,71 @@ http://miradontsoa.com
       </div>
       <!-- End of section wrapper -->
     </div>
-    <!-- End of list projects section -->
+    <!-- End of description section -->
+    <!-- Begin of description section -->
+    <div class="section section-description fp-auto-height-responsive section-text-bright"
+    data-section="about-feature-2">
+      <div class="section-cover-full fit bg-color" data-bgcolor="rgb(107, 194, 200)"></div>
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth fullheight with-margin center-lg-v">
+
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row  justify-content-between">
+            <div class="col-12 col-md-5 text-left center-v">
+              <div class="wrapper">
+                <!-- title and description -->
+                <div class="title-desc">
+                  <h2 class="display-4 display-title anim-1">Fast
+                    <span class="text-lighter">Performance</span>
+                  </h2>
+                  <p class="anim-2">This describes what we do and what is our mission. At right you
+                    can see the awesome people behind. Lorem ipsum magicum dolor
+                    sit amet, consectetur adipiscing elit. Maecenas a sem ultrices
+                    neque vehicula fermentum a sit amet nulla.
+                  </p>
+                </div>
+
+                <!-- Action button -->
+                <div class="btns-action anim-3">
+                  <a class="btn btn-underline btn-primary" href="#services">
+                    <span class="text">Services</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <!-- content -->
+              <div class="section-content center-vh anim">
+                <!-- illustartion -->
+                <div class="images text-center">
+                  <div class="img-frame img-black frame-small">
+                    <div class="img-1 shadow">
+                      <img class="img" src="img/items/laptop.png" alt="Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon down"></span>
+          </a>
+          <span class="separator"></span>
+          <a class="up">
+            <span class="icon up"></span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of description section -->
 
     <!-- Begin of list feature section -->
     <div class="section section-list-feature fp-auto-height-responsive " data-section="services">
@@ -777,9 +655,262 @@ http://miradontsoa.com
     </div>
     <!-- End of list feature section -->
 
+    <!-- Begin of slider section -->
+    <div class="section section-twoside fullscreen-slider section-text-bright" data-section="projects-featured">
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <div class="img bg-img" data-image-src="img/items/img-sample1.jpg"></div>
+            </div>
+            <div class="legend">
+              <a href="item-style1.html#project_url">
+                <h3>Paper Design</h3>
+                <h4>Art / Print</h4>
+                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
+              </a>
+              <a class="btn btn-underline btn-primary" href="item-style1.html#project_url">
+                <span class="text">View Project</span>
+              </a>
+              <div class="icons">
+                <a class="icon-btn" href="#">
+                  <i class="icon ion-android-home"></i>
+                </a>
+                <a class="icon-btn" href="#">
+                  <i class="icon ion-android-cart"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <div class="img bg-img" data-image-src="img/items/img-sample2.jpg"></div>
+            </div>
+            <div class="legend">
+              <a href="item-style1.html#project_url">
+                <h3>Fire Cloud</h3>
+                <h4>Photography / App</h4>
+                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
+              </a>
+              <a class="btn btn-underline btn-primary" href="item-style1.html#project_url">
+                <span class="text">View Project</span>
+              </a>
+              <div class="icons">
+                <a class="icon-btn" href="#">
+                  <i class="icon ion-android-home"></i>
+                </a>
+                <a class="icon-btn" href="#">
+                  <i class="icon ion-android-cart"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="slide-wrapper">
+          <div class="item-wrapper">
+            <div class="illustr">
+              <div class="img bg-img" data-image-src="img/items/img-sample3.jpg"></div>
+            </div>
+            <div class="legend">
+              <a href="item-style1.html#project_url">
+                <h3>Color Wall</h3>
+                <h4>Photography</h4>
+                <p>Lorem ipsum magicum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas a sem ultrices neque vehicula fermentum a sit amet nulla.</p>
+              </a>
+              <a class="btn btn-underline btn-primary" href="item-style1.html#project_url">
+                <span class="text">View Project</span>
+              </a>
+              <div class="icons">
+                <a class="icon-btn" href="#">
+                  <i class="icon ion-android-home"></i>
+                </a>
+                <a class="icon-btn" href="#">
+                  <i class="icon fa fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Arrows scroll down/up -->
+      <footer class="section-footer scrolldown">
+        <a class="down">
+          <span class="icon down"></span>
+        </a>
+        <span class="separator"></span>
+        <a class="up">
+          <span class="icon up"></span>
+        </a>
+      </footer>
+
+    </div>
+    <!-- End of slider section -->
+
+    <!-- Begin of list projects section -->
+    <div class="section section-list-feature fp-auto-height-responsive " data-section="projects">
+
+      <!-- Begin of section wrapper -->
+      <div class="section-wrapper fullwidth with-margin margin-topbottom">
+        <!-- content -->
+        <div class="section-content anim">
+          <div class="row">
+            <div class="col-12 col-lg-6 text-left">
+              <!-- title and description -->
+              <div class="title-desc">
+                <h2 class="display-4 display-title anim-1">Projects</h2>
+                <p class="anim-2">List of our projects. Lorem ipsum magicum dolor sit amet, consectetur
+                  adipiscing elit. Maecenas a sem ultrices neque vehicula fermentum
+                  a sit amet nulla.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- project list -->
+          <div class="project-list grid-1 grid-md-2 grid-lg-3 anim-list">
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/img-sample9-square.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="item-style1.html#project_url">
+                  <h4>Art / Design</h4>
+                  <h3>Alpha Project</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-underline btn-primary" href="item.html">
+                  <span class="text">Details ...</span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/img-sample10-square.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="item-style1.html#project_url">
+                  <h4>Archi / Photo</h4>
+                  <h3>Beta Project</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-underline btn-primary" href="item.html">
+                  <span class="text">Details ...</span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/img-sample11-square.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="item-style1.html#project_url">
+                  <h4>Website Design</h4>
+                  <h3>Gamma Project</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-underline btn-primary" href="item.html">
+                  <span class="text">Details ...</span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/img-sample12-square.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="item-style1.html#project_url">
+                  <h4>Consulting</h4>
+                  <h3>Alpha Structure</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-underline btn-primary" href="item.html">
+                  <span class="text">Details ...</span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/img-sample13-square.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="item-style1.html#project_url">
+                  <h4>Android / iPhone</h4>
+                  <h3>Beta Coding</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-underline btn-primary" href="item.html">
+                  <span class="text">Details ...</span>
+                </a>
+              </div>
+            </div>
+            <!-- an item -->
+            <div class="item media media-project">
+              <div class="media-img">
+                <img class="" src="img/items/img-sample14-square.jpg" alt="An image">
+              </div>
+              <div class="media-body">
+                <a href="item-style1.html#project_url">
+                  <h4>Finance</h4>
+                  <h3>Gamma Analytics</h3>
+                </a>
+              </div>
+              <div class="media-footer">
+                <a class="btn btn-underline btn-primary" href="item.html">
+                  <span class="text">Details ...</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+        <!-- Arrows scroll down/up -->
+        <footer class="section-footer scrolldown">
+          <a class="down">
+            <span class="icon down"></span>
+          </a>
+          <span class="separator"></span>
+          <a class="up">
+            <span class="icon up"></span>
+          </a>
+        </footer>
+      </div>
+      <!-- End of section wrapper -->
+    </div>
+    <!-- End of list projects section -->
+
+
 
     <!-- Begin of list products section -->
-    <div class="section section-grid fp-auto-height-responsive section-centered" data-section="products">
+    <div class="section section-grid fp-auto-height-responsive " data-section="products">
+      <div class="section-cover-full fit bg-color" data-bgcolor="#f1f2f3"></div>
       <!-- Begin of section wrapper -->
       <div class="section-wrapper fullwidth with-margin margin-topbottom">
 
@@ -810,7 +941,7 @@ http://miradontsoa.com
                 <img class="" src="img/items/img-sample5.jpg" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
+                <a href="item-style1.html#project_url">
                   <div class="head row">
                     <div class="col-sm-8">
                       <h3>Pacific Ocean</h3>
@@ -844,7 +975,7 @@ http://miradontsoa.com
                 <img class="" src="img/items/img-sample6.jpg" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
+                <a href="item-style1.html#project_url">
                   <div class="head row">
                     <div class="col-sm-8">
                       <h3>Funny Birds</h3>
@@ -878,7 +1009,7 @@ http://miradontsoa.com
                 <img class="" src="img/items/img-sample7.jpg" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
+                <a href="item-style1.html#project_url">
                   <div class="head row">
                     <div class="col-sm-8">
                       <h3>Zeta Office</h3>
@@ -912,7 +1043,7 @@ http://miradontsoa.com
                 <img class="" src="img/items/img-sample8.jpg" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
+                <a href="item-style1.html#project_url">
                   <div class="head row">
                     <div class="col-sm-8">
                       <h3>Canvas Tutorial</h3>
@@ -946,7 +1077,7 @@ http://miradontsoa.com
                 <img class="" src="img/items/img-sample9.jpg" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
+                <a href="item-style1.html#project_url">
                   <div class="head row">
                     <div class="col-sm-8">
                       <h3>Jacket Dress</h3>
@@ -980,7 +1111,7 @@ http://miradontsoa.com
                 <img class="" src="img/items/img-sample10.jpg" alt="An image">
               </div>
               <div class="media-body">
-                <a href="item.html#project_url">
+                <a href="item-style1.html#project_url">
                   <div class="head row">
                     <div class="col-sm-8">
                       <h3>Table Bonzai</h3>
@@ -1026,6 +1157,7 @@ http://miradontsoa.com
 
     <!-- Begin of register/login/signin section -->
     <div class="section section-register fp-auto-height-responsive " data-section="register">
+      <div class="section-cover-full fit bg-color" data-bgcolor="#eaeaea"></div>
 
       <!-- Begin of section wrapper -->
       <div class="section-wrapper fullwidth fullheight center-lg-v with-margin margin-topbottom">
@@ -1307,7 +1439,6 @@ http://miradontsoa.com
   <!-- Javascript main files -->
   <script src="./js/main.js"></script>
 
-  <script src="js/particlejs/particles-init.js"></script>
 
 </body>
 
