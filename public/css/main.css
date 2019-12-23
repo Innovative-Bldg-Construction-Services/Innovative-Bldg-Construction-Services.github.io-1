@@ -3619,6 +3619,10 @@ textarea {
     height: 100%;
     background: rgba(0, 0, 0, 0.1); }
 
+.section-cover-full.mask-black {
+  filter: blur(7px);
+}
+
 .cover-content {
   position: relative;
   height: 100%;
