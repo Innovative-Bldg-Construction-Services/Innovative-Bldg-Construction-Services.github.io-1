@@ -19,6 +19,17 @@ $(document).on('ready', function () {
 	var console = (window.console = window.console || {});
 	var contextWindow = $(window);
 	var $root = $('html, body');
+
+	const root = document.documentElement;
+	const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+	const marqueeContent = document.querySelector("ul.marquee-content");
+
+	root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+	for(let i=0; i<marqueeElementsDisplayed; i++) {
+		marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+	}
+
 	while (length--) {
 		method = methods[length];
 		// Only stub undefined methods.

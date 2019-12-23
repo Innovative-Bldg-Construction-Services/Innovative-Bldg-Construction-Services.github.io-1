@@ -2839,7 +2839,7 @@ textarea {
     .page-header-alpha .navbar-mainmenu .nav-item {
       -webkit-transition: 0.3s;
       transition: 0.3s;
-      font-size: 2rem;
+      font-size: 1.5rem;
       line-height: 1;
       font-family: "Open Sans", "Proxima Nova ", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif; }
       @media (min-width: 768px) {
