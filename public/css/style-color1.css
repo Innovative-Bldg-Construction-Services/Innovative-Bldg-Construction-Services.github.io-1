@@ -135,6 +135,7 @@ a {
 .section.section-clientele .marquee-col {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .marquee {
@@ -214,6 +215,7 @@ a {
     --marquee-elements-displayed: 3;
   }
   .marquee:before, .marquee:after { width: 1rem; }
+  .section.section-clientele .marquee-col { margin-top: 0px; }
 }
 
 .section-text-bright {
