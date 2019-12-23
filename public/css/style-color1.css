@@ -1,3 +1,12 @@
+:root {
+  --marquee-width: 80vw;
+  --marquee-height: 20vh;
+  --marquee-elements: 25; /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
 .body-page {
   background-color: #ffffff;
   color: #3d3d3d; }
@@ -114,6 +123,98 @@ a {
 .section.active .title-bg {
   opacity: 0.05;
   opacity: 0.1; }
+
+.section.section-clientele {
+  background-color: #eee;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.section-clientele .marquee-col {
+  display: flex;
+  justify-content: center;
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  background-color: white;
+  /* border-radius: 15px; */
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee:before, .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 1rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, #888 0%, transparent 100%)  
+}
+
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #888 0%, transparent 100%)  
+}
+
+.marquee .marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+.marquee .marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+
+.marquee .marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  padding: 15px;
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+  transition: transform 0.5s;
+}
+
+.marquee .marquee-content li:hover {
+  transform: scale(1.5);
+}
+  
+.marquee .marquee-content li img {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid #eee; */
+}
+
+@media (max-width: 600px) {
+  .section { font-size: 12px; }
+  :root {
+    --marquee-width: 92vw;
+    --marquee-height: 16vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 1rem; }
+}
 
 .section-text-bright {
   color: #ffffff; }
