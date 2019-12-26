@@ -1,6 +1,7 @@
 /*-----------------------------------------------------------------
 [Legal Notice]
 
+
 Copyright (c) Miradontsoa
 Website Template by miradontsoa
 http://highhay.com
@@ -1407,7 +1408,8 @@ textarea {
   font-size: 3rem;
   font-weight: 300;
   margin-top: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #f48538; }
 
 .article-light > .article-content > .wrapper > h2 + p:not(.not-intro) {
   margin-bottom: 32px;
@@ -3535,6 +3537,22 @@ textarea {
 .section {
   position: relative; }
 
+.section h4.para-enhance {
+  color: #319be8;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.section .section-wrapper .article-content h6.wp-subheader {
+  color: #319be8;
+  text-transform: capitalize;
+}
+
+.section .section-wrapper .article-content h3 {
+  color: #c3cbe0;
+}
+
 .section-cover-half-left {
   position: relative;
   left: 0;
@@ -3625,7 +3643,7 @@ textarea {
     background: rgba(0, 0, 0, 0.1); }
 
 .section-cover-full.mask-black {
-  filter: blur(7px);
+  filter: blur(10px);
 }
 
 .cover-content {
@@ -5902,11 +5920,6 @@ p {
 
 .text-black {
   color: #1d1d1d !important; }
-
-.para-enhance {
-  color: #2f4ea0;
-  text-align: center;
-}
 
 /* Add your responsiveness hook here  */
 /* ipad and tablet */
