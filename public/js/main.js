@@ -58,7 +58,11 @@ $(document).on('ready', function () {
 		divBlock.style.backgroundRepeat = "no-repeat";
 		divBlock.style.backgroundPosition = "center";
 		divBlock.style.backgroundSize = "cover";
-		divBlock.style.margin = "20px";
+		if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+			divBlock.style.margin = "10px";
+		} else {
+			$('.section .section-wrapper .slider-wrapper .slider-container.swiper-container').css('height', '200px')
+		}
 		$(listImgBlock[i]).after(divBlock);
 		listImgBlock[i].style.display = "none";
 	}

@@ -2247,7 +2247,8 @@ textarea {
               align-items: center;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; }
+              justify-content: center;
+      filter: blur(5px); }
       @media (min-width: 768px) {
         .carousel-swiper-beta .slider-container .illustr {
           min-height: 200px;
