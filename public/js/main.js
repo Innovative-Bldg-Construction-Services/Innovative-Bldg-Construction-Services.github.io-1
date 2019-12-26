@@ -58,6 +58,7 @@ $(document).on('ready', function () {
 		divBlock.style.backgroundRepeat = "no-repeat";
 		divBlock.style.backgroundPosition = "center";
 		divBlock.style.backgroundSize = "cover";
+		divBlock.style.margin = "20px";
 		$(listImgBlock[i]).after(divBlock);
 		listImgBlock[i].style.display = "none";
 	}

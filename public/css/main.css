@@ -1409,6 +1409,10 @@ textarea {
   margin-top: 2rem;
   margin-bottom: 2rem; }
 
+.article-light > .article-content > .wrapper > h2 + p:not(.not-intro) {
+  margin-bottom: 32px;
+}
+
 .article-light > .article-content > .wrapper > p {
   font-family: "Open Sans", "Proxima Nova ", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
   font-size: 1rem; }
@@ -2245,7 +2249,8 @@ textarea {
       @media (min-width: 768px) {
         .carousel-swiper-beta .slider-container .illustr {
           min-height: 200px;
-          height: 300px; } }
+          height: 300px;
+          filter: blur(5px); } }
       .carousel-swiper-beta .slider-container .illustr:before {
         content: "";
         position: absolute;
@@ -5897,6 +5902,11 @@ p {
 
 .text-black {
   color: #1d1d1d !important; }
+
+.para-enhance {
+  color: #2f4ea0;
+  text-align: center;
+}
 
 /* Add your responsiveness hook here  */
 /* ipad and tablet */
